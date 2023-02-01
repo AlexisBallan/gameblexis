@@ -4,7 +4,7 @@
 
     //print_r($_POST);
 
-    include_once("../Donnee/UtilisateurDAO.php");
+    include_once("../donnee/UtilisateurDAO.php");
     include_once("../modele/Utilisateur.php");
     $_POST['photo'] = $_SESSION['photo'];
 

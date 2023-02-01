@@ -1,6 +1,6 @@
 <?php 
 	include_once "/var/www/www.gameblexis.com/modele/Projet.php"; // autoload permis
-	include_once "/var/www/www.gameblexis.com/administration/accesseur/ProjetSQL.php";
+	include_once "/var/www/www.gameblexis.com/donnee/accesseur/ProjetSQL.php";
 
 	class Accesseur
 	{

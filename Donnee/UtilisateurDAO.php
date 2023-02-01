@@ -1,7 +1,7 @@
 <?php
 
 	include_once "/var/www/www.gameblexis.com/modele/Utilisateur.php"; // autoload permis
-    include_once "/var/www/www.gameblexis.com/administration/accesseur/UsersSQL.php";
+    include_once "/var/www/www.gameblexis.com/donnee/accesseur/UsersSQL.php";
 
     class Accesseur
     {
@@ -9,8 +9,6 @@
 
         public static function initialiser()
         {
-            //include_once "../Donnee/connexion.php";
-
             require('/var/www/html/gameblexis/connexion.php');
 
             UtilisateurDAO::$basededonnees = $basededonnees;

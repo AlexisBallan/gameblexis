@@ -2,7 +2,7 @@
 	//echo 'ok';
 
 	session_start();
-	require_once('Donnee/connexion.php');
+	require_once('donnee/connexion.php');
 
 	if(isset($_GET['game']))
 	{

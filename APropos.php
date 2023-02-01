@@ -6,14 +6,9 @@
 
   <?php include 'WebApp/_Layout/_Header.php' ?>
 
-  <!-- CSS only -->
-
-  <link rel="stylesheet" href="WebApp/aPropos.css">
+  <link rel="stylesheet" href="WebApp/_Layout/aPropos.css">
   </header>
   <body>
-   <!-- <p style="text-align: center;">
-      <img src="illustration/Blexis-simple.png" class="img-fluid" alt="logo"> 
-    </p>-->
 
   <div class="containerPrincipale">
     <div class="containerInfos">
@@ -40,7 +35,7 @@
     </div>
 
     <div class="imageRep card border-light mb-3" style="max-width: 50rem;">
-      <img src="/WebApp/illustration/imageRep.png" alt="image">
+      <img src="/WebApp/_Layout/image/imageRep.png" alt="image">
     </div>
 
   </div>

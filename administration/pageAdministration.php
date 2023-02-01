@@ -7,7 +7,7 @@
 <body class="body">
 
   <?php
-  include "../Donnee/JeuxDAO.php"; 
+  include "../donnee/JeuxDAO.php"; 
 
   if($_SESSION != null){
     if($_SESSION['admin'] == true){

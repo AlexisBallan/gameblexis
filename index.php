@@ -14,7 +14,7 @@
   <div id="zoneResultat"></div>
   
   <?php
-  include "Donnee/JeuxDAO.php"; 
+  include "donnee/JeuxDAO.php"; 
   $jeux = JeuxDAO::listerJeux();
       // ENVOYER UN MAIL
         /*

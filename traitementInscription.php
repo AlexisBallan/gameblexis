@@ -1,7 +1,7 @@
 <?php 
     print_r($_POST);
 
-    include_once("Donnee/UtilisateurDAO.php");
+    include_once("donnee/UtilisateurDAO.php");
     include_once("modele/Utilisateur.php");
 	
     $utilisateur = new Utilisateur($_POST);

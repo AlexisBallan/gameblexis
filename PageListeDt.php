@@ -117,7 +117,7 @@
   </div>
 
     <div class="imageRep card border-light mb-3" style="max-width: 50rem;">
-      <img src="WebApp/illustration/imageRep.png" alt="pp">
+      <img src="/WebApp/_Layout/image/imageRep.png" alt="pp">
     </div>
   </div>
 </body>

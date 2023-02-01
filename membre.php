@@ -10,7 +10,7 @@
 <body>
 
 <?php
-  require('/var/www/www.gameblexis.com/Donnee/UtilisateurDAO.php');
+  require('/var/www/www.gameblexis.com/donnee/UtilisateurDAO.php');
 
   if($_SESSION != null) {
     $reception = filter_var($_SESSION['id'], FILTER_VALIDATE_INT);

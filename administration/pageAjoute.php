@@ -18,7 +18,7 @@ include "../donnee/ProjetDAO.php";
 
   <!-- CSS only -->
   <link rel="stylesheet" href="../WebApp/_Layout/bootstrap.min.css">
-  <link rel="stylesheet" href="pageAjouter.css">
+  <link rel="stylesheet" href="../WebApp/_Layout/pageAjouter.css">
 
 </header>
 

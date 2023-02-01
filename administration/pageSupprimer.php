@@ -17,13 +17,8 @@ $projet = ProjetDAO::detaillerProjet($reception);
 <?php include '../WebApp/_Layout/_Header.php' ?>
   <title>Accueil</title>
 
-  <!-- CSS only -->
   <link rel="stylesheet" href="../WebApp/_Layout/bootstrap.min.css">
-  <link rel="stylesheet" href="pageSupprimer.css">
-
-<!--<p style="text-align: center;">
-  <img src="_Layout/Blexis-simple.png" alt="logo" class="img-fluid">
-</p>-->
+  <link rel="stylesheet" href="../WebApp/_Layout/pageSupprimer.css">
 
 </header>
 
