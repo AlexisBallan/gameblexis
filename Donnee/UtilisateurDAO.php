@@ -13,9 +13,7 @@
 
             require('/var/www/html/gameblexis/connexion.php');
 
-            $dsn = $basededonnees
-
-            UtilisateurDAO::$basededonnees = new PDO($dsn, $usager, $motdepasse);
+            UtilisateurDAO::$basededonnees = $basededonnees;
             UtilisateurDAO::$basededonnees->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         }
@@ -29,14 +27,6 @@
         {
 
             UtilisateurDAO::initialiser();
-
-            /*print_r("UtilisateurDAO(projet), projet = ");
-            print_r($projet);
-
-            print_r("projet.nom = ");
-            print_r($projet->nom);*/
-
-            //private const SQL_AJOUTER_UTILISATEUR = "INSERT into utilisateurs(nom, photo, mdp, email, description, entreprise) VALUES(:nom, :photo, :mdp, :email, :description, :entreprise)";
             $password = password_hash($projet->mdp, PASSWORD_DEFAULT);
 
             $demandeAjoutUtilisateur = UtilisateurDAO::$basededonnees->prepare(UsersSQL::SQL_AJOUTER_UTILISATEUR);
