@@ -3,10 +3,10 @@
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
 
-    $usager = 'keeels';
-    $motdepasse = 'fqwJFG5b55rp862';
+    $usager = 'facture';
+    $motdepasse = 'q8fWa@g+R-X79tY%X88$';
     $hote = 'localhost';
-    $base = 'gameblexis';
+    $base = 'facture';
     //$charset = 'utf8mb4'; // $charset = 'utf8';
 
     $dsn = "mysql:host=$hote;dbname=$base;";

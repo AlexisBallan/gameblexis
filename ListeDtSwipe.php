@@ -2,7 +2,8 @@
 
 $idConteneur = $_GET["id"];
 try{
-    $db = new PDO('mysql:host=localhost;dbname=gameblexis', 'keeels', 'fqwJFG5b55rp862');
+    require('/var/www/html/gameblexis/connexion.php');
+    $db = $basededonnees;
 
     $request = $db->prepare('SELECT id, titre, courte_descritption, description FROM jeux WHERE id=:id');
     $request->bindParam(':id', $idConteneur, PDO::PARAM_INT);
