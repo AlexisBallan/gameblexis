@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="_Layout/bootstrap.min.css">
+  <style>
+    .testFlex {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .boxDeJeux {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .centrer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .formulaire{
+        display: flex;
+        justify-content: center;
+        
+        width: auto;
+    }
+    .item-formulaire{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen {
+      @media(max-width: 999px) {
+        .boxDeJeux {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+
+      @media(min-width: 1000px) {
+        .boxDeJeux {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+
+      }
+
+    }
+  </style>
+
+<p style="text-align: center;">
+  <img src="_Layout/Blexis-simple.png" alt="logo" class="img-fluid">
+</p>
+<nav class="navbar navbar-expand navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto  mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Accueil
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>                                  
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Jeux</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Orkia</a>
+            <a class="dropdown-item" href="#">Jeux B</a>
+            <a class="dropdown-item" href="#">Jeux C</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Compte</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Infos</a>
+            <a class="dropdown-item" href="#">Achats</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">A propos</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<body>
+
+  <br><br><br><br>
+  <div class="formulaire">
+    <div>
+        <div class="form-group item-formulaire">
+            <label class="col-form-label mt-4" for="inputDefault">Titre</label>
+            <textarea class="form-control" rows="1" placeholder="Titre"></textarea>
+          </div>
+          <div class="form-group item-formulaire">
+            <label class="col-form-label mt-4" for="inputDefault">Courte description</label>
+            <textarea class="form-control" rows="2" placeholder="Courte description"></textarea>
+          </div>
+          <div class="form-group item-formulaire">
+            <label class="col-form-label mt-4" for="inputDefault">Description</label>
+            <textarea class="form-control" rows="5" placeholder="Description"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="formFile" class="form-label mt-4">Logo</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="form-group">
+            <label for="formFile" class="form-label mt-4">Image</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="form-group item-formulaire">
+            <label class="col-form-label mt-4" for="inputDefault">Nom d'entreprise</label>
+            <input type="text" class="form-control" placeholder="Nom d'entreprise" id="inputDefault">
+          </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="centrer">
+    <button type="button" class="btn btn-warning">Confirmer la modification</button>
+    <button type="button" class="btn btn-danger">Annuler</button>   
+  </div>
+    
+  <br><br><br>
+  
+
+</body>
+
+</html>

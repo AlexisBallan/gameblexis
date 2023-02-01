@@ -1,0 +1,42 @@
+  .testFlex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .centrer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .boxDeJeux {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen {
+    @media(max-width: 999px) {
+      .boxDeJeux {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    @media(min-width: 1000px) {
+      .boxDeJeux {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+    }
+
+  }

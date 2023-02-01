@@ -1,0 +1,33 @@
+body
+{
+    -webkit-font-smoothin: antialiased;
+}
+
+footer
+{
+    /*padding: 2em 0;
+    padding-bottom: 14em;
+    margin-top: 100% ;
+    position: relative;*/
+
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: auto;
+    width: 100vw;
+
+    padding-top: 40px;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+

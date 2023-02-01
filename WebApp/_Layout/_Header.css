@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+  }
+/*  body {
+    background: url("https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") center;
+    background-size: cover;
+    min-height: 600px;
+    font-family: "Helvetica Neue", sans-serif;
+  }*/
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+  nav 
+  {
+    text-align: center;
+  }
+  .menu 
+  {
+    display: inline-block;
+  }
+  .menu > li 
+  {
+    float: left;
+    color: #e298e1;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    font-size: 17px;
+
+  }
+
+  .menu > li:hover
+  {
+    color: aqua;
+  }
+
+  .lienNavBar
+  {
+    float: left;
+    color: #e298e1;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+  }
+
+  .menu > li > ul > li:hover
+  {
+    color: aquamarine;
+  }
+
+  .sub-menu 
+  {
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+
+  .sub-menu li 
+  {
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px 0;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+  .sub-menu li:last-child 
+  {
+    border-bottom: 0;
+  }
+  .sub-menu li:hover 
+  {
+    background: black;
+  }
+  .menu > li:hover .sub-menu li
+  {
+    transform: scale(1);
+  }
+  .menu > li:hover .sub-menu 
+  {
+    transform: scale(1);
+  }
+  .dropDown
+  {
+    text-decoration: none;
+    color: white;
+  }
+  .dropDown:hover
+  {
+    color: aquamarine;
+  }
+  
+/*section avatar*/
+.avatar{
+  margin-top: 2%;
+  overflow:hidden;
+}
+
+.img-user{
+  width: 100%;
+  height: 100%;
+}
+
+.user-icon{
+  font-size:2em;  /* change font size should change size of icon */
+  margin-top: 65%;
+}
+
+.user-icon{
+  border-radius:2em; border:2px solid red;
+  height:3em; width:3em;  
+  background:none;padding:0.05em;
+}
+
+.user-icon::before{
+  content:" "; display:block;
+  height:1em; width:1em;
+  background:white;
+  position:relative; left:32%;top:0.15em;
+  border-radius:1em;
+}
+
+.user-icon::after{
+  content:" "; display:block;
+  height:1em;width:2em;
+  background:white;
+  position:relative; left:14%;top:0.22em;
+  border-radius:1em 1em 0 0;
+}
+
+.topbar{
+    display: flex;
+    justify-content: center;
+    margin-right: 0%;
+}
+
+.lienProfil
+  {
+    float: left;
+    color: #e298e1;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+	  line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    
+  }
+
+
+  
+  .formCI{
+	  position: absolute;
+    display: flex;
+	  flex-direction: row;
+	  right: 10%;
+	  top: 10%;
+  }

@@ -1,0 +1,20 @@
+.nouvelle {
+    position:relative; 
+    margin:3px; clear:both;
+
+}
+			
+.nouvelle h3 {
+    display:inline; 
+}
+			
+.nouvelle a {
+    cursor:pointer;
+}
+
+#liste-nouvelles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

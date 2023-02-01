@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="_Layout/bootstrap.min.css">
+  <style>
+    .testFlex {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .boxDeJeux {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .centrer {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media screen {
+      @media(max-width: 999px) {
+        .boxDeJeux {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+
+      @media(min-width: 1000px) {
+        .boxDeJeux {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      }
+    }
+  </style>
+
+<p style="text-align: center;">
+  <img src="_Layout/Blexis-simple.png" alt="logo" class="img-fluid">
+</p>
+<nav class="navbar navbar-expand navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto  mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Accueil
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>                                  
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Jeux</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Orkia</a>
+            <a class="dropdown-item" href="#">Jeux B</a>
+            <a class="dropdown-item" href="#">Jeux C</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Compte</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Infos</a>
+            <a class="dropdown-item" href="#">Achats</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">A propos</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<body>
+
+  <br><br><br><br>
+  <div class="centrer">
+    <button type="button" class="btn btn-success">Ajouter</button>
+  </div>
+  <br><br><br>
+  <div class="boxDeJeux">
+
+    <div style="width: 100%;" class="testFlex">
+
+      <div class="card border-warning mb-3" style="max-width: 20rem;">
+        <div class="card-header">Jeux #1</div>
+        <div class="card-body">
+          <h4 class="card-title">Le monde enchanter des lutins</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning">Modifier</button>
+          <button type="button" class="btn btn-danger">Supprimer</button>
+        </div>
+      </div>
+    </div>
+    <div style="width: 100%;" class="testFlex">
+
+      <div class="card border-warning mb-3" style="max-width: 20rem;">
+        <div class="card-header">Jeux #2</div>
+        <div class="card-body">
+          <h4 class="card-title">Faux pas-poussé</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning">Modifier</button>
+          <button type="button" class="btn btn-danger">Supprimer</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 100%;" class="testFlex">
+
+      <div class="card border-warning mb-3" style="max-width: 20rem;">
+        <div class="card-header">Jeux #3</div>
+        <div class="card-body">
+          <h4 class="card-title">Jean-pascal casse la démarche</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning">Modifier</button>
+          <button type="button" class="btn btn-danger">Supprimer</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="boxDeJeux ">
+
+    <div style="width: 100%;" class="testFlex">
+      <div class="card border-warning mb-3" style="max-width: 20rem;">
+        <div class="card-header">Jeux #4</div>
+        <div class="card-body">
+          <h4 class="card-title">gragra le grigri</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning">Modifier</button>
+          <button type="button" class="btn btn-danger">Supprimer</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 100%;" class="testFlex">
+      <div class="card border-warning mb-3" style="max-width: 20rem;">
+        <div class="card-header">Jeux #5</div>
+        <div class="card-body">
+          <h4 class="card-title">Minekraphte</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning">Modifier</button>
+          <button type="button" class="btn btn-danger">Supprimer</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 100%;" class="testFlex">
+
+      <div class="card border-warning mb-3" style="max-width: 20rem;">
+        <div class="card-header">Jeux #6</div>
+        <div class="card-body">
+          <h4 class="card-title">Grand Test Auto</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning">Modifier</button>
+          <button type="button" class="btn btn-danger">Supprimer</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br><br>
+  <div class="centrer">
+    <button type="button" class="btn btn-success">Ajouter</button>
+  </div>
+  <br><br><br>
+ 
+
+</body>
+
+</html>

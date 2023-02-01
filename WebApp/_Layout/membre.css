@@ -1,0 +1,28 @@
+.infoPerso{
+  display: flex;
+  flex-direction: column;
+}
+
+.infos{
+  display: flex;
+  justify-content: row;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.imageRep{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 80px;
+  height: 202px;
+}
+
+.desc{
+  margin-top: 20px;
+}
+
+.btnModifier{
+  margin-left: auto;
+  margin-right: auto;
+}

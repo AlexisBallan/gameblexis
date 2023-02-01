@@ -1,0 +1,51 @@
+::-webkit-scrollbar {
+		display: none;
+	}
+  
+    .testFlex {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .boxDeJeux {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .centrer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .formulaire{
+        display: flex;
+        justify-content: center;
+        
+        width: auto;
+    }
+    .item-formulaire{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen {
+      @media(max-width: 999px) {
+        .boxDeJeux {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+
+      @media(min-width: 1000px) {
+        .boxDeJeux {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+
+      }
+
+    }
