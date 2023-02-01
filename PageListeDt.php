@@ -72,7 +72,7 @@
 <body>
 
 <?php
-  require('/var/www/www.gameblexis.com/administration/accesseur/ProjetDAO.php');
+  require('/var/www/www.gameblexis.com/donnee/ProjetDAO.php');
   $reception = filter_var($_POST['id'], FILTER_VALIDATE_INT);
   //print_r($reception);
   $projet = ProjetDAO::detaillerProjet($reception);

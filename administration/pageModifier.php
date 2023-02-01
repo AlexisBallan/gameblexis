@@ -3,7 +3,7 @@ include_once "../modele/Projet.php";
 $reception = filter_var($_POST['id'], FILTER_VALIDATE_INT);
 //print_r($reception);
 
-include "accesseur/ProjetDAO.php";
+include "../donnee/ProjetDAO.php";
 $projet = ProjetDAO::detaillerProjet($reception);
 //print_r($projet);
 ?>

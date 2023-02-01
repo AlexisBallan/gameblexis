@@ -4,7 +4,7 @@ $reception = filter_var($_POST['id'], FILTER_VALIDATE_INT);
 
 print_r($reception);
 
-include_once "accesseur/ProjetDAO.php";
+include_once "../donnee/ProjetDAO.php";
 $projet = ProjetDAO::detaillerProjet($reception);
 //print_r($projet);
 
