@@ -72,12 +72,10 @@ $projet = ProjetDAO::detaillerProjet($reception);
 
 <body>
 
-  <form action="/administration/traitement.php" method="post">
+  <form action="/administration/traitement.php" method="post" enctype="multipart/form-data">
     <div class="formulaire" action="projets.php">
       <div>
           <input type="hidden" name="id" value="<?=formater($projet->id)?>"/>
-          <input type="hidden" name="image_jeux" value="<?=formater($projet->image_jeux)?>"/>
-          <input type="hidden" name="logo" value="<?=formater($projet->logo)?>"/>
           <div class="form-group item-formulaire">
               <label class="col-form-label mt-4" for="inputDefault">Titre</label>
               <textarea class="form-control" rows="2" id="titre" name="titre" placeholder="Titre"><?= formater($projet->titre) ?></textarea>
@@ -95,13 +93,8 @@ $projet = ProjetDAO::detaillerProjet($reception);
 
             </div>
             <div class="form-group">
-              <label for="formFile" class="form-label mt-4">Logo</label>
-              <input class="form-control" type="file" id="formFile">
-
-            </div>
-            <div class="form-group">
               <label for="formFile" class="form-label mt-4">Image</label>
-              <input class="form-control" type="file" id="formFile">
+              <input class="form-control" type="file" id="formFile" name="photo">
 
             </div>
             <div class="form-group item-formulaire">

@@ -8,8 +8,7 @@ class Projet
 			'titre' => FILTER_SANITIZE_STRING,
 			'courte_descritption' => FILTER_SANITIZE_STRING,
 			'description' => FILTER_SANITIZE_STRING,
-			'logo' => FILTER_SANITIZE_STRING,
-			'image_jeux' => FILTER_SANITIZE_STRING,
+			'photo' => FILTER_SANITIZE_STRING,
 			'entreprise' => FILTER_SANITIZE_STRING,
 			'prix' => FILTER_SANITIZE_STRING
 		);
@@ -17,8 +16,7 @@ class Projet
 	protected $titre;
 	protected $courte_descritption;
 	protected $description;
-	protected $logo;
-	protected $image_jeux;
+	protected $photo;
 	protected $entreprise;
 	protected $prix;
 	
@@ -30,8 +28,7 @@ class Projet
 		$this->titre = $tableau['titre'];
 		$this->courte_descritption = $tableau['courte_descritption'];
 		$this->description = $tableau['description'];
-		$this->logo = $tableau['logo'];
-		$this->image_jeux = $tableau['image_jeux'];
+		$this->photo = $tableau['photo'];
 		$this->entreprise = $tableau['entreprise'];
 		$this->prix = $tableau['prix'];
 	}
@@ -52,11 +49,8 @@ class Projet
 			case 'description':
 				$this->description = $valeur;
 			break;
-			case 'logo':
-				$this->logo = $valeur;
-			break;
-			case 'image_jeux':
-				$this->image_jeux = $valeur;
+			case 'photo':
+				$this->photo = $valeur;
 			break;
 			case 'entreprise':
 				$this->entreprise = $valeur;

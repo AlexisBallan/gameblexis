@@ -47,12 +47,12 @@
 			$demandeAjoutProjet = ProjetDAO::$basededonnees->prepare(ProjetDAO::SQL_AJOUTER_PROJET);
 			$demandeAjoutProjet->bindValue(':titre',$projet->titre, PDO::PARAM_STR);
 			$demandeAjoutProjet->bindValue(':description',$projet->description, PDO::PARAM_STR);
-			$demandeAjoutProjet->bindValue(':logo',$projet->logo, PDO::PARAM_STR);
-			$demandeAjoutProjet->bindValue(':image_jeux',$projet->image_jeux, PDO::PARAM_STR);
+			//$demandeAjoutProjet->bindValue(':logo',$projet->logo, PDO::PARAM_STR);
+			$demandeAjoutProjet->bindValue(':photo',$projet->photo, PDO::PARAM_STR);
 			$demandeAjoutProjet->bindValue(':entreprise',$projet->entreprise, PDO::PARAM_STR);
 			$demandeAjoutProjet->bindValue(':courte_descritption',$projet->courte_descritption, PDO::PARAM_STR);
 			$demandeAjoutProjet->bindValue(':prix',$projet->prix, PDO::PARAM_STR);
-			$demandeAjoutProjet->execute();			
+			$demandeAjoutProjet->execute();	
 		}
 		
 		public static function editerProjet($projet)
@@ -65,13 +65,12 @@
 			$demandeEditionProjet->bindValue(':titre',$projet->titre, PDO::PARAM_STR);
 			$demandeEditionProjet->bindValue(':courte_descritption',$projet->courte_descritption, PDO::PARAM_STR);
 			$demandeEditionProjet->bindValue(':description',$projet->description, PDO::PARAM_STR);
-			$demandeEditionProjet->bindValue(':logo',$projet->logo, PDO::PARAM_STR);
-			$demandeEditionProjet->bindValue(':image_jeux',$projet->image_jeux, PDO::PARAM_STR);
+			//$demandeEditionProjet->bindValue(':logo',$projet->logo, PDO::PARAM_STR);
+			$demandeEditionProjet->bindValue(':photo',$projet->photo, PDO::PARAM_STR);
 			$demandeEditionProjet->bindValue(':entreprise',$projet->entreprise, PDO::PARAM_STR);
 			$demandeEditionProjet->bindValue(':prix',$projet->prix, PDO::PARAM_STR);
 			$demandeEditionProjet->bindValue(':id',$projet->id, PDO::PARAM_INT);
-			print_r($projet);
-
+			//print_r($projet);
 			$demandeEditionProjet->execute();
 			//print_r($demandeEditionProjet->errorInfo());
 		}
@@ -85,8 +84,6 @@
 			$demandeEffacementProjet->bindParam(':id', $id, PDO::PARAM_INT);
 			$demandeEffacementProjet->execute();
 		}
-		
-		
 	}
 
 function formater($texte)

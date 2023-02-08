@@ -49,3 +49,13 @@
 span{
   padding-left: 10px;
 }
+
+.emplacement-image-jeux{
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.img-jeux{
+  max-width: 100%;
+  max-height: 100%;
+}

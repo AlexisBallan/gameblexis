@@ -28,8 +28,7 @@ include "../donnee/ProjetDAO.php";
     <div class="formulaire" action="projets.php">
       <div>
           <input type="hidden" name="id" value="<?=formater($projet->id)?>"/>
-          <input type="hidden" name="image_jeux" value="<?=formater($projet->image_jeux)?>"/>
-          <input type="hidden" name="logo" value="<?=formater($projet->logo)?>"/>
+          <input type="hidden" name="photo" value="photo"/>
           <div class="form-group item-formulaire">
               <label class="col-form-label mt-4" for="inputDefault">Titre</label>
               <textarea class="form-control" rows="2" id="titre" name="titre" placeholder="Titre"></textarea>
@@ -46,16 +45,7 @@ include "../donnee/ProjetDAO.php";
               <textarea class="form-control" rows="5" id="description" name="description" placeholder="Description"></textarea>
 
             </div>
-            <div class="form-group">
-              <label for="formFile" class="form-label mt-4">Logo</label>
-              <input class="form-control" type="file" id="formFile">
-
-            </div>
-            <div class="form-group">
-              <label for="formFile" class="form-label mt-4">Image</label>
-              <input class="form-control" type="file" id="formFile">
-
-            </div>
+          
             <div class="form-group item-formulaire">
               <label class="col-form-label mt-4" for="inputDefault">Nom d'entreprise</label>
               <textarea class="form-control" placeholder="Nom d'entreprise" id="entreprise" name="entreprise"></textarea>

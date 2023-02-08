@@ -2,8 +2,6 @@
 <?php 
     include '../WebApp/_Layout/_Header.php';
 
-    //print_r($_POST);
-
     include_once("../donnee/UtilisateurDAO.php");
     include_once("../modele/Utilisateur.php");
     $_POST['photo'] = $_SESSION['photo'];

@@ -85,14 +85,19 @@
     };
   </script>
 
-  <button onclick="previous(getId())">jeu precedent</button>
-  <button onclick="next(getId())">jeu suivant</button>
-
   <div class="containerPrincipale">
       <div class="containerInfos">
         <h2 id="lst-titre"><?= $projet->titre ?></h2>
         <p class="mb-0" id="lst-courte-description"><?= $projet->courte_descritption ?></p>
         <p class="mb-0" id="lst-description"><?= $projet->description ?></p>
+        <div class="emplacement-image-jeux">
+        <?php
+          if($projet->photo != "photo"){
+            ?>
+            <img class="img-jeux" src="/photo/<?=$projet->photo?>" alt="utilisateur">
+            <?php
+          }?>
+        </div>
       <figcaption class="blockquote-footer">
         Entreprise : <cite title="Source Title"><?= $projet->entreprise ?></cite>
       </figcaption>
@@ -115,10 +120,6 @@
     <span><?= $projet->prix ?> $</span>
     </div>
   </div>
-
-    <div class="imageRep card border-light mb-3" style="max-width: 50rem;">
-      <img src="/WebApp/_Layout/image/imageRep.png" alt="pp">
-    </div>
   </div>
 </body>
 <?php include 'WebApp/_Layout/_Footer.php' ?>
