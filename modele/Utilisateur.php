@@ -69,14 +69,8 @@ class Utilisateur
 
 	public function __get($propriete)
 	{
-		//$variable = '$this->'.$propriete;
-		//return $$variable;
-		$self = get_object_vars($this); // externaliser pour optimiser
-		//print_r($self);
+		$self = get_object_vars($this);
 		return $self[$propriete];
 	}	
 }
-//$contrat = new Contrat();
-//$contrat->titre = "coucou";
-//echo $contrat->titre;
 ?>
